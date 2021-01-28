@@ -1,0 +1,4 @@
+name: AirGame-RPG-DaedalusStormBow
+version: ${project.version}
+main: net.airgame.bukkit.stormbow.StormBowPlugin
+api-version: 1.16
