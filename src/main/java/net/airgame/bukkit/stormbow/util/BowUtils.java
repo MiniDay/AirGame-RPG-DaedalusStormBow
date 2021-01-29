@@ -3,6 +3,7 @@ package net.airgame.bukkit.stormbow.util;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.entity.LivingEntity;
+import org.bukkit.util.BoundingBox;
 
 import java.util.List;
 
@@ -28,13 +29,14 @@ public class BowUtils {
         for (int i = 0; i < size; i++) {
             target.add(x, y, z);
             if (target.getBlock().getType().isSolid()) {
-                return target;
+                return target.add(-x, -y, -z);
             }
             List<LivingEntity> livingEntities = world.getLivingEntities();
             livingEntities.remove(entity);
             for (LivingEntity livingEntity : livingEntities) {
-                if (livingEntity.getBoundingBox().contains(target.getX(), target.getY(), target.getZ())) {
-                    return target;
+                BoundingBox boundingBox = livingEntity.getBoundingBox();
+                if (boundingBox.contains(target.getX(), target.getY(), target.getZ())) {
+                    return target.add(x, y, z);
                 }
             }
         }

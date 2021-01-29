@@ -6,7 +6,7 @@
 
     <groupId>net.airgame.bukkit</groupId>
     <artifactId>AirGame-RPG-DaedalusStormBow</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>AirGame-RPG-DaedalusStormBow</name>
