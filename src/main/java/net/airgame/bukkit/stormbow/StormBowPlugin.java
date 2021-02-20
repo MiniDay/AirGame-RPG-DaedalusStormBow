@@ -1,6 +1,6 @@
 package net.airgame.bukkit.stormbow;
 
-import net.airgame.bukkit.api.command.annotation.CommandScan;
+import net.airgame.bukkit.api.annotation.CommandScan;
 import net.airgame.bukkit.stormbow.listener.MainListener;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;

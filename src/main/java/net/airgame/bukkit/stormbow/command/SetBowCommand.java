@@ -1,8 +1,8 @@
 package net.airgame.bukkit.stormbow.command;
 
-import net.airgame.bukkit.api.command.annotation.Command;
-import net.airgame.bukkit.api.command.annotation.CommandExecutor;
-import net.airgame.bukkit.api.command.annotation.Sender;
+import net.airgame.bukkit.api.annotation.Command;
+import net.airgame.bukkit.api.annotation.CommandExecutor;
+import net.airgame.bukkit.api.annotation.Sender;
 import net.airgame.bukkit.stormbow.constant.NameSpacedKeys;
 import net.airgame.bukkit.stormbow.persistent.BooleanDataType;
 import org.bukkit.Material;
