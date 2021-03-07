@@ -85,6 +85,7 @@ public class MainListener implements Listener {
         ItemStack stack = new ItemStack(Material.BOW);
         ItemMeta meta = stack.getItemMeta();
         meta.setDisplayName("§6§l代达罗斯风暴弓");
+        meta.getPersistentDataContainer().set(NameSpacedKeys.IS_STORM_BOW.key, BooleanDataType.INSTANCE, true);
         stack.setItemMeta(meta);
         drops.add(stack);
     }
